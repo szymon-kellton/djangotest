@@ -4,12 +4,12 @@ jobs:
   test_project:
     runs-on: ubuntu-latest # operating system your code will run on
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v2
       - uses: actions/setup-python@v2
       - run: pip install Django
       - run: python django_project/manage.py runserver &
       - name: Cypress run
-        uses: cypress-io/github-action@v5
+        uses: cypress-io/github-action@v2
         with:
           build: npm run build
           start: npm start
