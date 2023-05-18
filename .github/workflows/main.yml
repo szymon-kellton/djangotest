@@ -8,6 +8,7 @@ jobs:
       - uses: actions/setup-python@v2
       - run: pip install Django
       - run: python django_project/manage.py runserver &
+        working-directory: ./cypress/
       - name: Cypress run
         uses: cypress-io/github-action@v5
         with:
