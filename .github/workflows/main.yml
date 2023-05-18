@@ -7,6 +7,5 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/setup-python@v2
       - run: pip install Django
-      - run: cd django_project/django_project
-      - run: ls
-      - run: python ./manage.py runserver
+      - run: cd django_project/django_project | ls
+      - run: python django_project/manage.py runserver
