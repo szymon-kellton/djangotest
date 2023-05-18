@@ -4,7 +4,7 @@ jobs:
   test_project:
     runs-on: ubuntu-latest # operating system your code will run on
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - uses: actions/setup-python@v2
       - run: pip install Django
       - run: python django_project/manage.py runserver &
