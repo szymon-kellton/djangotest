@@ -13,5 +13,6 @@ jobs:
       - run: python manage.py runserver &
       - uses: cypress-io/github-action@v5
         with:
+          working-directory: cypress/
           spec: cypress/e2e/spec.cy.js
           browser: chrome
