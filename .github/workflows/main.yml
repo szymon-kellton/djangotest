@@ -8,4 +8,4 @@ jobs:
       - uses: actions/setup-python@v2
       - run: pip install Django
       - run: cd django_project/django_project | ls
-      - run: python django_project/manage.py runserver
+      - run: python django_project/manage.py runserver &
